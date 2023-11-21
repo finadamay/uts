@@ -1,0 +1,352 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root {
+    --main-color : #3F2305;
+    --main-color-hover : #e6c34f;
+    --dark-color : #2b2b2b;
+    --container-width : 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.biji{
+    text-decoration: none;
+    display: inline-block;
+    
+    margin-top: 50vh;
+    padding: 0.7em 1.2em;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.racikan{
+    text-decoration: none;
+    display: inline-block;
+    
+    margin-top: 50vh;
+    padding: 0.7em 1.2em;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30vh;
+}
+
+.shop{
+    text-decoration: none;
+    display: inline-block;
+    
+    margin-top: 50vh;
+    padding: 0.7em 1.2em;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30vh;
+}
+
+.biji:hover {
+    background-color: var(--main-color-hover);
+    color: white;
+    transition: all 0.3s;
+}
+
+.racikan:hover {
+    background-color: var(--main-color-hover);
+    color: white;
+    transition: all 0.3s;
+}
+
+.shop:hover {
+    background-color: var(--main-color-hover);
+    color: white;
+    transition: all 0.3s;
+}
+
+.nav-container header label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.nav-container header {
+    width: 100%;
+}
+
+.nav-container nav { 
+    display: none; 
+}
+
+.nav-container header input:checked ~ nav {
+        display: flex;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+}
+
+.nav-container {
+    background-color: var(--dark-color);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.nav-container header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.nav-container header label, #ghost {
+    display: none;
+}
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3)), url("images/coffee bg.jpeg");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.hero-text {
+    text-align: center;
+    color: white;
+    padding: 1rem; 
+}
+    
+.hero-text h1 {
+    position: absolute;
+    width: 468px;
+    height: 190px;
+    left: 90px;
+    top: 100px;
+
+    font-family: 'Jomhuria';
+    font-style: initial;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    color: white;
+}
+    
+.hero-text h2{    
+    position: absolute;
+    width: 335px;
+    height: 140px;
+    left: 800px;
+    top: 60px;
+    font-family: 'Gochi Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;
+    line-height: 147px;
+    text-align: center;
+
+    color: white;
+
+}
+/*=======================================================================*/
+
+.blog-container .snippet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+
+    background-color: #DAB88B;
+}
+
+.blog-index {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    justify-content:center;
+}
+    
+.blog-index .snippet {
+    width: 25%;
+}
+    
+.blog-index .snippet-img {
+    margin: 25px 25px ;
+    width: 85%;
+    border-radius: 50px;
+}
+    
+.blog-index .snippet-txt {
+    padding: 0 1em;
+}
+    
+.blog-index .snippet-txt small {
+    color: #999;
+}
+
+.snippet h2{
+    text-align: center;
+}
+
+.blog-container .snippet2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    
+    background-color: #C8AE7D;
+}
+
+.blog-index .snippet2 {
+    width: 25%;
+}
+    
+.blog-index .snippet2-img {
+    margin: 25px 25px ;
+    width: 85%;
+    border-radius: 50px;
+}
+
+.snippet2 h2{
+    text-align: center;
+}
+
+/*========================================================*/
+
+.blog-index2 {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.snippet3 {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center; 
+    background-color:  #e8b6b0;
+}
+
+.snippet3 .snippet-img {
+    width: 25vh; 
+    height: auto; 
+    margin-left: 35px; 
+    border-radius: 15%; 
+}
+
+.snippet3 .snippet-txt {
+    flex: 1; 
+    margin-left: 0.5cm;
+}
+
+.snippet4 {
+    display: flex;
+    align-items: center;
+    background-color:  #cd977e; 
+    flex: 0 0 50%;
+}
+
+.snippet4 .snippet-img {
+    width: 25vh; 
+    height: auto; 
+    margin-left: 35px; 
+    border-radius: 15%;
+}
+
+.snippet4 .snippet-txt {
+    flex: 1; 
+    margin-left: 0.5cm;
+}
+
+/*=============================================================*/
+
+.shoping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.shopeeimg{
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+}
+
+.shopeebtn{   
+    width: 192px;
+    height: 50px;
+    right: 714px;
+    border-radius: 25px;
+    background: #161B30;
+    display: block;
+    margin-left: 1.3cm;
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+}
+
+.shopeebtn:hover{
+    background: #e6c34f;
+    color: #161B30;
+}
+
+.tokpedimg{
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tokpedbtn{   
+    width: 192px;
+    height: 50px;
+    right: 714px;
+    border-radius: 25px;
+    background: #161B30;
+    display: block;
+    margin-left: 0.9cm;
+    margin-top: 30px;
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+}
+
+.tokpedbtn:hover{
+    background: #e6c34f;
+    color: #161B30;
+}
